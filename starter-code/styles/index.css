@@ -5,6 +5,12 @@ body {
   font-family: 'Spartan', sans-serif;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
 button {
   background-color: #1b1d23;
   padding: 1.5rem 2rem 1.5rem 2rem;
@@ -86,5 +92,16 @@ nav img {
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 25px;
+}
+
+.intro {
+  padding: 4.5rem 2rem 6.0625rem 2rem;
+}
+
+.intro .intro-content p {
+  line-height: 25px;
+  font-size: 0.9375rem;
+  color: #60636d;
+  font-weight: 500;
 }
 /*# sourceMappingURL=index.css.map */
