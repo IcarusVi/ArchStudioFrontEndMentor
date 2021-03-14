@@ -147,3 +147,43 @@ nav{
         
     }
 }
+
+footer{
+    position: relative;
+    background-color: $veryLightGrey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    .footerLogo{
+        position: absolute;
+        top: -60px;
+        background-color: black;  
+              
+        margin: auto;
+        width: 120px;
+        height: 120px;
+        padding-bottom: 0;
+        display: flex;
+    }
+    svg{
+        margin-top: 30px;
+        margin-left: 10px;
+        fill: white;
+        transform: scale(0.6);
+    }
+    .footer-content{
+        margin-top: 5rem;
+        p{
+            color: $medGrey;
+            font-weight: bold;
+            font-size: 0.9375rem;
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+    }
+    button{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
