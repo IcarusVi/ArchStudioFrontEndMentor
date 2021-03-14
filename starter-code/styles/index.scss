@@ -7,6 +7,30 @@ body{
     font-family: 'Spartan', sans-serif;
 }
 
+button{
+    background-color: $veryDarkBlue;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    width: auto;
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        margin-left: 24px;
+    }
+    &:hover{
+        background-color: $darkGrey;
+    }
+    &:active{
+        background-color: $lightGrey;
+    }
+}
+
 nav{
     padding: 2rem;
     display: flex;
@@ -17,4 +41,28 @@ nav{
         height: fit-content;
     }
     
+}
+
+.hero{
+    padding: 6.875rem 2rem 6.875rem 2rem;
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/mobile/image-hero-paramour.jpg');
+    background-size: cover;
+    .hero-content{
+        color: white;
+        h1{
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 3rem;
+            letter-spacing: -1.2px;
+            margin-bottom: 0.9375rem;
+            margin-top: 0;
+        }
+        p{
+            margin-bottom: 3.56rem;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.9375rem;
+            line-height: 25px;
+        }
+    }
 }

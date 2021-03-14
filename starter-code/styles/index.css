@@ -5,6 +5,39 @@ body {
   font-family: 'Spartan', sans-serif;
 }
 
+button {
+  background-color: #1b1d23;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  width: auto;
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 25px;
+  border-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button img {
+  margin-left: 24px;
+}
+
+button:hover {
+  background-color: #60636d;
+}
+
+button:active {
+  background-color: #c8ccd8;
+}
+
 nav {
   padding: 2rem;
   display: -webkit-box;
@@ -25,5 +58,33 @@ nav img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.hero {
+  padding: 6.875rem 2rem 6.875rem 2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-hero-paramour.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/mobile/image-hero-paramour.jpg");
+  background-size: cover;
+}
+
+.hero .hero-content {
+  color: white;
+}
+
+.hero .hero-content h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -1.2px;
+  margin-bottom: 0.9375rem;
+  margin-top: 0;
+}
+
+.hero .hero-content p {
+  margin-bottom: 3.56rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 25px;
 }
 /*# sourceMappingURL=index.css.map */
