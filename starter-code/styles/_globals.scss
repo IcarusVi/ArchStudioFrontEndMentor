@@ -1,0 +1,82 @@
+
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'Spartan', sans-serif;
+}
+
+button{
+    background-color: $veryDarkBlue;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    width: auto;
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        margin-left: 24px;
+    }
+    &:hover{
+        background-color: $darkGrey;
+    }
+    &:active{
+        background-color: $lightGrey;
+    }
+}
+
+nav{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+}
+
+footer{
+    position: relative;
+    background-color: $veryLightGrey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    .footerLogo{
+        position: absolute;
+        top: -60px;
+        background-color: black;  
+              
+        margin: auto;
+        width: 120px;
+        height: 120px;
+        padding-bottom: 0;
+        display: flex;
+    }
+    svg{
+        margin-top: 30px;
+        margin-left: 10px;
+        fill: white;
+        transform: scale(0.6);
+    }
+    .footer-content{
+        margin-top: 5rem;
+        p{
+            color: $medGrey;
+            font-weight: bold;
+            font-size: 0.9375rem;
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+    }
+    button{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}

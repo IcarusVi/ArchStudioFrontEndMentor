@@ -115,68 +115,6 @@ footer button {
   margin-bottom: 3rem;
 }
 
-h2 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-}
-
-h3 {
-  font-size: 1.125rem;
-}
-
-.hero {
-  padding: 6.875rem 2rem 6.875rem 2rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-hero-paramour.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/mobile/image-hero-paramour.jpg");
-  background-size: cover;
-}
-
-.hero .hero-content {
-  color: white;
-}
-
-.hero .hero-content h1 {
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 3rem;
-  letter-spacing: -1.2px;
-  margin-bottom: 0.9375rem;
-  margin-top: 0;
-}
-
-.hero .hero-content p {
-  margin-bottom: 3.56rem;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.9375rem;
-  line-height: 25px;
-}
-
-.intro {
-  padding: 4.5rem 2rem 6.0625rem 2rem;
-}
-
-.intro .intro-content p {
-  line-height: 25px;
-  font-size: 0.9375rem;
-  color: #60636d;
-  font-weight: 500;
-}
-
-.about {
-  padding: 10.6875rem 2rem 11.8125rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-small-team.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/mobile/image-small-team.jpg");
-  background-size: cover;
-  color: white;
-}
-
-.about .about-content h2 {
-  margin-bottom: 2rem;
-  letter-spacing: -1.43px;
-}
-
 .projects {
   padding: 3.94rem 2rem 8.25rem 2rem;
 }
@@ -229,4 +167,4 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=portfolio.css.map */
