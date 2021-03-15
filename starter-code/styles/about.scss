@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+@import './variables';
+@import './globals';
+
+.about-header{
+    background-image: url('../assets/about/mobile/image-hero.jpg');
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+
+    .blocker{
+        width:91.4%;
+        height: 45px;
+        background-color:white;
+
+    }
+}
+
+section{
+    h2{
+        margin-top: 0;
+    }
+    padding-left: 2rem;
+    padding-right: 2rem;
+    p{
+        font-size: 0.9375rem;
+        color: $darkGrey;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    margin-bottom: 4.5rem;
+    .liner{
+        background-color: #C8CCD8;
+        width: 65px;
+        height: 1px;
+        margin-bottom: 4.1875rem;
+    }
+}
+
+.leaders{
+    h2{
+        margin-bottom: 1.5rem;
+    }
+    .iconlinks{
+        width: fit-content;
+        img{
+            margin-right:25.6px;
+        }
+    }
+    .leader-card{
+        margin-top: 2.5rem;
+    }
+    padding-bottom: 4rem;
+}

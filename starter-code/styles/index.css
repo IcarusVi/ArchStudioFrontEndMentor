@@ -5,6 +5,16 @@ body {
   font-family: 'Spartan', sans-serif;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
 button {
   background-color: #1b1d23;
   padding: 1.5rem 2rem 1.5rem 2rem;
@@ -113,16 +123,6 @@ footer .footer-content p {
 footer button {
   margin-top: 2rem;
   margin-bottom: 3rem;
-}
-
-h2 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-}
-
-h3 {
-  font-size: 1.125rem;
 }
 
 .hero {
