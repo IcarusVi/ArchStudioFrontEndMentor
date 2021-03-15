@@ -143,21 +143,75 @@ footer button {
   margin-top: 0px;
 }
 
-.projects .projects-content .project-card.delSol {
+.projects .projects-content .delSol {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-del-sol.jpg");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-del-sol.jpg");
   background-size: cover;
 }
 
-.projects .projects-content .project-card.tower {
+.projects .projects-content .tower {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-228b.jpg");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-228b.jpg");
   background-size: cover;
 }
 
-.projects .projects-content .project-card.prototype {
+.projects .projects-content .prototype {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-prototype.jpg");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-prototype.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .seraph {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-seraph.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-seraph.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .eebox {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-eebox.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-eebox.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .federal {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-federal.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-federal.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .grand {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-edelweiss.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-edelweiss.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .netcry {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-netcry.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-netcry.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .hypers {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-hypers.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-hypers.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .SXIV {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-sxiv.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-sxiv.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .tbt {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-trinity.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-trinity.jpg");
+  background-size: cover;
+}
+
+.projects .projects-content .paramour {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-paramour.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-paramour.jpg");
   background-size: cover;
 }
 
