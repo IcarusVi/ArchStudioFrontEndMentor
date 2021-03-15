@@ -16,6 +16,29 @@ h3{
     font-size: 1.125rem;
 }
 
+input{
+    outline: none;
+    border-style: none;
+    border-bottom: 1px solid $veryDarkBlue;
+    padding-left: 34.19px;
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    &::placeholder{
+        color: $lightGrey;
+        opacity: 1;
+    }
+    &:focus{
+        color: $veryDarkBlue;
+        border-bottom: 3px solid $veryDarkBlue;
+
+    }
+    &:invalid{
+        border-bottom: 3px solid $redErrors;
+    }
+}
+
+
 button{
     background-color: $veryDarkBlue;
     padding: 1.5rem 2rem 1.5rem 2rem;
