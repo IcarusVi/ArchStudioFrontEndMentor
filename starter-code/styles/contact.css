@@ -5,6 +5,11 @@ body {
   font-family: 'Spartan', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h2 {
   font-size: 40px;
   font-weight: bold;
@@ -13,6 +18,25 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
+}
+
+.subMenu {
+  color: #1b1d23;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding: 3rem;
+  background-color: #eeeff4;
+  margin-left: 2rem;
+}
+
+.subMenu ul {
+  padding: 0;
+  list-style-type: none;
+  width: 50%;
+}
+
+.subMenu ul li {
+  margin-bottom: 2rem;
 }
 
 input {
@@ -52,10 +76,6 @@ input:focus {
 
 input:invalid {
   border-bottom: 3px solid #DF5656;
-}
-
-a {
-  text-decoration: none;
 }
 
 button {

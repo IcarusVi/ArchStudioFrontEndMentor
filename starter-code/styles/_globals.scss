@@ -1,8 +1,14 @@
+@import './variables';
 
 body{
     margin: 0;
     background-color: white;
     font-family: 'Spartan', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 h2{
@@ -14,6 +20,24 @@ h2{
 
 h3{
     font-size: 1.125rem;
+}
+
+.subMenu{
+    color: $veryDarkBlue;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 3rem;
+    background-color: $veryLightGrey;
+    margin-left: 2rem;
+    ul{
+        padding: 0;
+        list-style-type: none;
+        width: 50%;
+        li{
+            margin-bottom: 2rem;
+        }
+        
+    }
 }
 
 input{
@@ -38,9 +62,7 @@ input{
     }
 }
 
-a{
-    text-decoration: none;
-}
+
 
 
 button{
