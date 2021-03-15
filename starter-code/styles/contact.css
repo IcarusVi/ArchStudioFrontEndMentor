@@ -235,6 +235,10 @@ section .office .map-arrow p {
   margin-bottom: 4rem;
 }
 
+.connect {
+  padding-bottom: 4rem;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
