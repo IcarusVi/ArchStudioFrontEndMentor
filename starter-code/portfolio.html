@@ -7,6 +7,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel='stylesheet' href='./styles/portfolio.css'>
+  <script src="./scripts/script.js"></script>
 
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
 </head>
@@ -14,8 +15,15 @@
 <body>
   <nav>
     <img class='nav-logo' src='./assets/logo.svg'>
-    <img class='hamburger' src='./assets/icons/icon-hamburger.svg'>
-  </nav>
+    <img id='hamburger' class='hamburger' onclick="toggleSubMenu()" src='./assets/icons/icon-hamburger.svg'>  </nav>
+
+  <div id='subMenu' class="subMenu">
+    <ul>
+      <li><a href='starter-code/portfolio.html'>Portfolio</a></li>
+      <li><a href='starter-code/about.html'>About Us</a></li>
+      <li><a href='starter-code/contact.html'>Contact</a></li>
+    </ul>
+  </div>
 
   <section class="projects">
     <div class="projects-content">

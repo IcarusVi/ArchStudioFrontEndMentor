@@ -60,7 +60,7 @@ input{
         border-bottom: 3px solid $veryDarkBlue;
 
     }
-    &:invalid{
+    &:focus:invalid{
         border-bottom: 3px solid $redErrors;
     }
 }
