@@ -54,6 +54,10 @@ input:invalid {
   border-bottom: 3px solid #DF5656;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   background-color: #1b1d23;
   padding: 1.5rem 2rem 1.5rem 2rem;
