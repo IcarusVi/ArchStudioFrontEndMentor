@@ -252,5 +252,17 @@ footer{
     @media (min-width: $tablet){
         display: flex;
     }
+    @media (min-width: $deskTop){
+        width: 67%;
+        height: 200px;
+        left: auto;
+        right: auto;
+        .footerLogov2{
+            width: 200px;
+        }
+        .footer-content{
+            margin-right: 20rem;
+        }
+    }
 
 }

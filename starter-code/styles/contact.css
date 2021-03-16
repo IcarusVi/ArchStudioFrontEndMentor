@@ -359,6 +359,21 @@ footer button {
   }
 }
 
+@media (min-width: 1440px) {
+  .footerTablet {
+    width: 67%;
+    height: 200px;
+    left: auto;
+    right: auto;
+  }
+  .footerTablet .footerLogov2 {
+    width: 200px;
+  }
+  .footerTablet .footer-content {
+    margin-right: 20rem;
+  }
+}
+
 .contact-header {
   background-image: url("../assets/about/mobile/image-hero.jpg");
   width: 100%;

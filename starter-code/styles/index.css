@@ -359,6 +359,21 @@ footer button {
   }
 }
 
+@media (min-width: 1440px) {
+  .footerTablet {
+    width: 67%;
+    height: 200px;
+    left: auto;
+    right: auto;
+  }
+  .footerTablet .footerLogov2 {
+    width: 200px;
+  }
+  .footerTablet .footer-content {
+    margin-right: 20rem;
+  }
+}
+
 .hero {
   padding: 6.875rem 2rem 6.875rem 2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-hero-paramour.jpg");
@@ -676,6 +691,9 @@ footer button {
 }
 
 @media (min-width: 1440px) {
+  .projects {
+    margin-bottom: 200px;
+  }
   .projects .projects-content {
     display: -webkit-box;
     display: -ms-flexbox;
