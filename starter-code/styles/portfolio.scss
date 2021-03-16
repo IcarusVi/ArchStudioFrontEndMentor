@@ -28,60 +28,119 @@
         .delSol{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-del-sol.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-del-sol.jpg');
+                background-size: cover;
+            }
 
         }
         .tower{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-228b.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-228b.jpg');
+                background-size:cover;
+        
+            }
         }
         .prototype{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-prototype.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-prototype.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .seraph{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-seraph.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-seraph.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .eebox{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-eebox.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-eebox.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .federal{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-federal.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-federal.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .grand{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-edelweiss.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-edelweiss.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .netcry{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-netcry.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-netcry.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .hypers{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-hypers.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-hypers.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .SXIV{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-sxiv.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-sxiv.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .tbt{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-trinity.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-trinity.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .paramour{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-paramour.jpg');
             background-size:cover;
+            @media (min-width:$tablet) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-paramour.jpg');
+                background-size:cover;
+        
+            }
         }
 
     }
@@ -89,5 +148,9 @@
         width: 100%;
         justify-content:center
         
+    }
+    @media (min-width:$tablet) {
+        padding: 0;
+        margin-bottom: 12.5rem;
     }
 }
