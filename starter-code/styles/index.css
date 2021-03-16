@@ -5,15 +5,73 @@ body {
   font-family: 'Spartan', sans-serif;
 }
 
+@media (min-width: 768px) {
+  body {
+    padding-left: 6.125rem;
+    padding-right: 6.125rem;
+  }
+}
+
+.fancyLine {
+  display: none;
+  top: -20px;
+  left: 0;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 2rem;
+}
+
+.fancyLine .greyLine {
+  height: 1px;
+  width: 104px;
+  background-color: #c8ccd8;
+  margin-right: 3rem;
+}
+
+.fancyLine p {
+  margin: 0;
+  color: #c8ccd8;
+  letter-spacing: 15px;
+}
+
+@media (min-width: 768px) {
+  .fancyLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1 {
+  color: #eeeff4;
+  font-size: 7.5rem;
+  letter-spacing: -3px;
+  line-height: 12.5rem;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 40px;
   font-weight: bold;
   line-height: 48px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 h3 {
@@ -219,8 +277,29 @@ footer button {
   line-height: 25px;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/tablet/image-hero-paramour.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/tablet/image-hero-paramour.jpg");
+    padding: 11.25rem 3.625rem 11.25rem 3.625rem;
+  }
+  .hero .hero-content h1 {
+    font-size: 5rem;
+    letter-spacing: -2px;
+    line-height: 5rem;
+  }
+  .hero .hero-content p {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .intro {
+  margin-bottom: 6.625rem;
   padding: 4.5rem 2rem 6.0625rem 2rem;
+}
+
+.intro .intro-content h1 {
+  display: none;
 }
 
 .intro .intro-content p {
@@ -228,6 +307,25 @@ footer button {
   font-size: 0.9375rem;
   color: #60636d;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    margin-bottom: 12.5rem;
+    padding: 0;
+  }
+  .intro .intro-content h1 {
+    margin-top: 4.625rem;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .intro .intro-content h2 {
+    margin-top: 0;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -2px;
+    width: 446px;
+  }
 }
 
 .about {
@@ -241,6 +339,14 @@ footer button {
 .about .about-content h2 {
   margin-bottom: 2rem;
   letter-spacing: -1.43px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/tablet/image-small-team.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/tablet/image-small-team.jpg");
+    padding: 10.5rem 4.375rem 10.5rem 3.625rem;
+  }
 }
 
 .projects {
@@ -294,5 +400,11 @@ footer button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

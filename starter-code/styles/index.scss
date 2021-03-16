@@ -3,9 +3,6 @@
 @import './globals';
 
 
-
-
-
 .hero{
     padding: 6.875rem 2rem 6.875rem 2rem;
     background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/mobile/image-hero-paramour.jpg');
@@ -28,11 +25,29 @@
             line-height: 25px;
         }
     }
+    @media (min-width: $tablet){
+        background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/tablet/image-hero-paramour.jpg');
+        padding: 11.25rem 3.625rem 11.25rem 3.625rem;
+        .hero-content{
+            h1{
+                font-size: 5rem;
+                letter-spacing: -2px;
+                line-height: 5rem;
+            }
+            p{
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
 }
 
 .intro{
+    margin-bottom: 6.625rem;
     padding: 4.5rem 2rem 6.0625rem 2rem;
     .intro-content{
+        h1{
+            display: none;
+        }
         p{
             line-height: 25px;
             font-size: 0.9375rem;
@@ -40,6 +55,24 @@
             font-weight: 500;
         }
 
+    }
+    @media (min-width: $tablet){
+        margin-bottom: 12.5rem;
+        padding: 0;
+        .intro-content{
+            h1{
+                margin-top: 4.625rem;
+                margin-bottom: 0;
+                display: inline-block;
+            }
+            h2{
+                margin-top: 0;
+                font-size:3.5rem;
+                line-height: 3.5rem;
+                letter-spacing: -2px;
+                width: 446px;
+            }
+        }
     }
 }
 
@@ -53,6 +86,10 @@
             margin-bottom: 2rem;
             letter-spacing: -1.43px;
         }
+    }
+    @media (min-width: $tablet){
+        background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/tablet/image-small-team.jpg');
+        padding: 10.5rem 4.375rem 10.5rem 3.625rem;
     }
 }
 
@@ -97,6 +134,9 @@
         width: 100%;
         justify-content:center
         
+    }
+    @media (min-width: $tablet){
+        padding: 0;
     }
 }
 

@@ -4,6 +4,35 @@ body{
     margin: 0;
     background-color: white;
     font-family: 'Spartan', sans-serif;
+    @media (min-width: $tablet) {
+        padding-left: 6.125rem;
+        padding-right: 6.125rem;
+    }
+}
+
+.fancyLine{
+    display: none;
+    top: -20px;
+    left: 0;
+    position: absolute;
+    align-items: center;
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    margin-left: 2rem;
+    .greyLine{
+        height: 1px;
+        width: 104px;
+        background-color: $lightGrey;
+        margin-right: 3rem;
+    }
+    p{
+        margin: 0;
+        color: $lightGrey;
+        letter-spacing: 15px;
+    }
+    @media (min-width: $tablet){
+        display: flex;
+    }
 }
 
 a{
@@ -11,10 +40,22 @@ a{
     color: inherit;
 }
 
+h1{
+    color: $veryLightGrey;
+    font-size: 7.5rem;
+    letter-spacing: -3px;
+    line-height: 12.5rem;
+    font-weight: bold;
+}
+
 h2{
     font-size: 40px;
     font-weight: bold;
     line-height: 48px;
+    @media (min-width: $tablet){
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
 
 }
 
@@ -100,6 +141,9 @@ nav{
     img{
         width: fit-content;
         height: fit-content;
+    }
+    @media (min-width: $tablet) {
+        
     }
     
 }
