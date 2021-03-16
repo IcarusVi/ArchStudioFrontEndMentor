@@ -74,6 +74,12 @@ h1 {
   font-weight: bold;
 }
 
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 12.5rem;
+  }
+}
+
 h2 {
   font-size: 40px;
   font-weight: bold;
@@ -171,10 +177,6 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-button img {
-  margin-left: 24px;
 }
 
 button:hover {

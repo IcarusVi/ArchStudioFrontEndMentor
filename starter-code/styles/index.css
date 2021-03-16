@@ -74,6 +74,12 @@ h1 {
   font-weight: bold;
 }
 
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 12.5rem;
+  }
+}
+
 h2 {
   font-size: 40px;
   font-weight: bold;
@@ -171,10 +177,6 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-button img {
-  margin-left: 24px;
 }
 
 button:hover {
@@ -385,6 +387,10 @@ footer button {
   line-height: 25px;
 }
 
+.hero .sliderButtons {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/tablet/image-hero-paramour.jpg");
@@ -401,13 +407,42 @@ footer button {
   }
 }
 
+@media (min-width: 1440px) {
+  .hero {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-hero-paramour.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-hero-paramour.jpg");
+    padding: 11.25rem 23.5rem 11.25rem 11.875rem;
+  }
+  .hero .sliderButtons {
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .sliderButtons .slider {
+    border: none;
+    background-color: #eeeff4;
+    color: #7d828f;
+  }
+  .hero .sliderButtons .slider.active {
+    background-color: #1b1d23;
+    color: white;
+  }
+}
+
 .intro {
+  position: relative;
   margin-bottom: 6.625rem;
   padding: 4.5rem 2rem 6.0625rem 2rem;
 }
 
 .intro .intro-content h1 {
   display: none;
+  position: relative;
+  z-index: 100;
 }
 
 .intro .intro-content p {
@@ -415,6 +450,20 @@ footer button {
   font-size: 0.9375rem;
   color: #60636d;
   font-weight: 500;
+}
+
+.intro .welcomePic {
+  display: none;
+  z-index: 0;
+}
+
+@media (min-width: 1440px) {
+  .intro .welcomePic {
+    display: inline;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -436,6 +485,14 @@ footer button {
   }
 }
 
+@media (min-width: 1440px) {
+  .intro .intro-content .paragraph {
+    width: 446px;
+    position: relative;
+    margin-left: 189px;
+  }
+}
+
 .about {
   padding: 10.6875rem 2rem 11.8125rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-small-team.jpg");
@@ -449,11 +506,23 @@ footer button {
   letter-spacing: -1.43px;
 }
 
+.about .about-content button {
+  width: 187px;
+}
+
 @media (min-width: 768px) {
   .about {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/tablet/image-small-team.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/tablet/image-small-team.jpg");
     padding: 10.5rem 4.375rem 10.5rem 3.625rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-small-team.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-small-team.jpg");
+    padding: 10.5rem 29.6875rem 10.5rem 11.875rem;
   }
 }
 
@@ -537,6 +606,14 @@ footer button {
   }
 }
 
+@media (min-width: 1440px) {
+  .projects .projects-content .project-card.delSol {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/desktop/image-del-sol.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/desktop/image-del-sol.jpg");
+    background-size: cover;
+  }
+}
+
 .projects .projects-content .project-card.tower {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-228b.jpg");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-228b.jpg");
@@ -547,6 +624,14 @@ footer button {
   .projects .projects-content .project-card.tower {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/tablet/image-228b.jpg");
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/tablet/image-228b.jpg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projects .projects-content .project-card.tower {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/desktop/image-228b.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/desktop/image-228b.jpg");
     background-size: cover;
   }
 }
@@ -565,15 +650,21 @@ footer button {
   }
 }
 
+@media (min-width: 1440px) {
+  .projects .projects-content .project-card.prototype {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/desktop/image-prototype.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/desktop/image-prototype.jpg");
+    background-size: cover;
+  }
+}
+
 .projects button {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (min-width: 768px) {
   .projects {
+    margin-top: 12.5rem;
     padding: 0;
   }
   .projects .portNumber {
@@ -581,6 +672,29 @@ footer button {
   }
   .projects .btn2 {
     display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projects .projects-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .projects .projects-content .projectsHeader {
+    width: 100%;
+  }
+  .projects .projects-content .projectsHeader .btn1 {
+    width: 169px;
+  }
+  .projects .projects-content .project-card {
+    height: 560px;
+    width: 350px;
   }
 }
 /*# sourceMappingURL=index.css.map */

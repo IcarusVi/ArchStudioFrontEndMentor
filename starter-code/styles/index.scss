@@ -25,6 +25,9 @@
             line-height: 25px;
         }
     }
+    .sliderButtons{
+        display: none;
+    }
     @media (min-width: $tablet){
         background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/tablet/image-hero-paramour.jpg');
         padding: 11.25rem 3.625rem 11.25rem 3.625rem;
@@ -39,14 +42,38 @@
             }
         }
     }
+    @media (min-width: $deskTop){
+        position: relative;
+        background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/desktop/image-hero-paramour.jpg');
+        padding: 11.25rem 23.5rem 11.25rem 11.875rem;
+        
+        .sliderButtons{
+            position: absolute;
+            bottom: 0;
+            left:-80px;
+            display: flex;
+            .slider{
+                border:none;
+                background-color: $veryLightGrey;
+                color: $medGrey;
+            }
+            .slider.active{
+                background-color:$veryDarkBlue;
+                color: white;
+            }
+        }
+    }
 }
 
 .intro{
+    position: relative;
     margin-bottom: 6.625rem;
     padding: 4.5rem 2rem 6.0625rem 2rem;
     .intro-content{
         h1{
             display: none;
+            position: relative;
+            z-index: 100;
         }
         p{
             line-height: 25px;
@@ -56,6 +83,18 @@
         }
 
     }
+    .welcomePic{
+        display: none;
+        z-index: 0;
+        @media (min-width: $deskTop){
+            display: inline;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+    }
+    
     @media (min-width: $tablet){
         margin-bottom: 12.5rem;
         padding: 0;
@@ -73,6 +112,19 @@
                 width: 446px;
             }
         }
+
+    }
+
+    @media (min-width: $deskTop) {
+        .intro-content{
+            
+            .paragraph{
+                width: 446px;
+                position: relative;
+                margin-left: 189px;
+            }
+        }
+        
     }
 }
 
@@ -86,10 +138,18 @@
             margin-bottom: 2rem;
             letter-spacing: -1.43px;
         }
+        button{
+            width: 187px;
+        }
     }
     @media (min-width: $tablet){
         background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/tablet/image-small-team.jpg');
         padding: 10.5rem 4.375rem 10.5rem 3.625rem;
+    }
+    @media (min-width: $deskTop){
+        background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/desktop/image-small-team.jpg');
+        padding: 10.5rem 29.6875rem 10.5rem 11.875rem;
+
     }
 }
 
@@ -151,6 +211,11 @@
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-del-sol.jpg');
                 background-size:cover;
             }
+            @media (min-width: $deskTop){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-del-sol.jpg');
+                background-size:cover;
+            }
+            
 
         }
         .project-card.tower{
@@ -158,6 +223,11 @@
             background-size:cover;
             @media (min-width: $tablet){
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-228b.jpg');
+                background-size:cover;
+
+            }
+            @media (min-width: $deskTop){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-228b.jpg');
                 background-size:cover;
 
             }
@@ -170,20 +240,42 @@
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-prototype.jpg');
                 background-size:cover;
             }
+            @media (min-width: $deskTop){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-prototype.jpg');
+                background-size:cover;
+            }
         }
     }
     button{
-        width: 100%;
-        justify-content:center
-        
+        width: 100%;        
     }
     @media (min-width: $tablet){
+        margin-top: 12.5rem;
         padding: 0;
         .portNumber{
             display: inline-block;
         }
         .btn2{
             display: none;
+        }
+        
+    }
+    @media (min-width: $deskTop){
+        .projects-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .projectsHeader{
+                width: 100%;
+                .btn1{
+                    width:169px;
+                }
+            }
+            .project-card{
+                height: 560px;
+                width: 350px;
+            }
+            
         }
         
     }

@@ -54,7 +54,12 @@ h1{
     letter-spacing: -3px;
     line-height: 12.5rem;
     font-weight: bold;
+    @media (min-width: $deskTop){
+        font-size: 12.5rem;
+    }
+    
 }
+
 
 h2{
     font-size: 40px;
@@ -130,9 +135,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    img{
-        margin-left: 24px;
-    }
+    
     &:hover{
         background-color: $darkGrey;
     }
