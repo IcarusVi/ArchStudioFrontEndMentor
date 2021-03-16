@@ -338,6 +338,10 @@ h1 {
   background-color: white;
 }
 
+.hero .liner {
+  display: none;
+}
+
 section {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -411,6 +415,9 @@ section .liner {
     background-color: white;
     margin-left: 58px;
     margin-bottom: 0;
+  }
+  .hero section .liner {
+    display: block;
   }
   .hero h1 {
     display: block;
