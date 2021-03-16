@@ -249,6 +249,72 @@ footer button {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+
+.footerTablet {
+  display: none;
+  width: 80%;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #eeeff4;
+}
+
+.footerTablet .footerLogov2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 120px;
+  background-color: black;
+}
+
+.footerTablet .footerLogov2 img {
+  -webkit-transform: scale(0.7, 0.7);
+          transform: scale(0.7, 0.7);
+}
+
+.footerTablet .footer-content {
+  background-color: #eeeff4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0  auto;
+  width: 41.15%;
+}
+
+.footerTablet button {
+  position: absolute;
+  right: -10rem;
+}
+
+@media (min-width: 768px) {
+  .footerTablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .contact-header {
   background-image: url("../assets/about/mobile/image-hero.jpg");
   width: 100%;

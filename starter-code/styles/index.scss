@@ -95,11 +95,38 @@
 
 .projects{
     padding: 3.94rem 2rem 8.25rem 2rem;
+    .portNumber{
+        display: none;
+        position: absolute;
+        top: 16px;
+        right: 0;
+        opacity: 0.5;
+        color: white;
+        margin: 0;
+        font-size: 12.5rem;
+    }
     .projects-content{
-        h2{
-            margin-bottom: 3rem;
+        
+        .projectsHeader{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .btn1{
+                display: none;
+            }
+            h2{
+                margin-bottom: 3rem;
+            }
+            @media (min-width: $tablet){
+                .btn1{
+                    display: flex;
+                    width: 30%;
+                }
+            }
         }
+
         .project-card{
+            position: relative;
             .content{
                 padding: 10.125rem 9.0625rem 1.5rem 1.5rem;
                 
@@ -112,6 +139,7 @@
                     line-height: 25px;
                     opacity: 0.75;
                     margin-top: 0px;
+                    font-size: 15px;
                 }
             }
             margin-bottom: 1.5rem;
@@ -119,15 +147,29 @@
         .project-card.delSol{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-del-sol.jpg');
             background-size:cover;
+            @media (min-width: $tablet){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-del-sol.jpg');
+                background-size:cover;
+            }
 
         }
         .project-card.tower{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-228b.jpg');
             background-size:cover;
+            @media (min-width: $tablet){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-228b.jpg');
+                background-size:cover;
+
+            }
+
         }
         .project-card.prototype{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-prototype.jpg');
             background-size:cover;
+            @media (min-width: $tablet){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-prototype.jpg');
+                background-size:cover;
+            }
         }
     }
     button{
@@ -137,6 +179,13 @@
     }
     @media (min-width: $tablet){
         padding: 0;
+        .portNumber{
+            display: inline-block;
+        }
+        .btn2{
+            display: none;
+        }
+        
     }
 }
 

@@ -249,6 +249,72 @@ footer button {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+
+.footerTablet {
+  display: none;
+  width: 80%;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #eeeff4;
+}
+
+.footerTablet .footerLogov2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 120px;
+  background-color: black;
+}
+
+.footerTablet .footerLogov2 img {
+  -webkit-transform: scale(0.7, 0.7);
+          transform: scale(0.7, 0.7);
+}
+
+.footerTablet .footer-content {
+  background-color: #eeeff4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0  auto;
+  width: 41.15%;
+}
+
+.footerTablet button {
+  position: absolute;
+  right: -10rem;
+}
+
+@media (min-width: 768px) {
+  .footerTablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .hero {
   padding: 6.875rem 2rem 6.875rem 2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-hero-paramour.jpg");
@@ -353,11 +419,48 @@ footer button {
   padding: 3.94rem 2rem 8.25rem 2rem;
 }
 
-.projects .projects-content h2 {
+.projects .portNumber {
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  opacity: 0.5;
+  color: white;
+  margin: 0;
+  font-size: 12.5rem;
+}
+
+.projects .projects-content .projectsHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .projects-content .projectsHeader .btn1 {
+  display: none;
+}
+
+.projects .projects-content .projectsHeader h2 {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 768px) {
+  .projects .projects-content .projectsHeader .btn1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+  }
+}
+
 .projects .projects-content .project-card {
+  position: relative;
   margin-bottom: 1.5rem;
 }
 
@@ -375,6 +478,7 @@ footer button {
   line-height: 25px;
   opacity: 0.75;
   margin-top: 0px;
+  font-size: 15px;
 }
 
 .projects .projects-content .project-card.delSol {
@@ -383,16 +487,40 @@ footer button {
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .projects .projects-content .project-card.delSol {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/tablet/image-del-sol.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/tablet/image-del-sol.jpg");
+    background-size: cover;
+  }
+}
+
 .projects .projects-content .project-card.tower {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-228b.jpg");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-228b.jpg");
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .projects .projects-content .project-card.tower {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/tablet/image-228b.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/tablet/image-228b.jpg");
+    background-size: cover;
+  }
+}
+
 .projects .projects-content .project-card.prototype {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/mobile/image-prototype.jpg");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/mobile/image-prototype.jpg");
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .projects .projects-content .project-card.prototype {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/portfolio/tablet/image-prototype.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/portfolio/tablet/image-prototype.jpg");
+    background-size: cover;
+  }
 }
 
 .projects button {
@@ -405,6 +533,12 @@ footer button {
 @media (min-width: 768px) {
   .projects {
     padding: 0;
+  }
+  .projects .portNumber {
+    display: inline-block;
+  }
+  .projects .btn2 {
+    display: none;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -186,4 +186,47 @@ footer{
         margin-top: 2rem;
         margin-bottom: 3rem;
     }
+    @media (min-width: $tablet){
+        display: none;
+        
+    }
+}
+
+.footerTablet{
+    display: none;
+    width: 80%;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $veryLightGrey;
+    .footerLogov2{
+        img{
+            transform: scale(0.7, 0.7);
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 120px;
+        background-color: black;
+    }
+    .footer-content{
+        background-color: $veryLightGrey;
+        display: flex;
+        justify-content: space-between;
+        margin:0  auto;
+        width: 41.15%;
+        
+        
+    }
+    button{
+        position: absolute; 
+        right: -10rem;
+    }
+    @media (min-width: $tablet){
+        display: flex;
+    }
+
 }
