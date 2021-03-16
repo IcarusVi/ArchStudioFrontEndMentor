@@ -12,6 +12,13 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  body {
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
+  }
+}
+
 .fancyLine {
   display: none;
   top: -20px;
@@ -45,6 +52,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fancyLine {
+    margin-left: 4rem;
   }
 }
 
