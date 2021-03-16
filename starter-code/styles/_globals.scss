@@ -142,8 +142,21 @@ nav{
         width: fit-content;
         height: fit-content;
     }
+    .tabletLinks{
+        display: none;
+    }
     @media (min-width: $tablet) {
-        
+        justify-content: flex-start;
+        #hamburger{
+            display: none;
+        }
+        .tabletLinks{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            font-size: 15px;
+        }
     }
     
 }

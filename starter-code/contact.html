@@ -15,9 +15,21 @@
 <body>
 
   <nav>
-    <img class='nav-logo' src='./assets/logo.svg'>
+    <a href= '/starter-code/index.html'><img class='nav-logo' src='./assets/logo.svg'></a>
     <img id='hamburger' class='hamburger' onclick="toggleSubMenu()" src='./assets/icons/icon-hamburger.svg'>
+    <div class='tabletLinks'>
+      <a href= '/starter-code/portfolio.html'><p>Portfolio</p></a>
+
+      <a href="/starter-code/about.html"><p>About Us</p></a>
+
+      <a href="/starter-code/contact.html"><p>Contact</p></a>
+    </div>
   </nav>
+
+  <div class="fancyLine">
+    <div class="greyLine"></div>
+    <p>CONTACT</p>
+  </div>
 
   <div id='subMenu' class="subMenu">
     <ul>
@@ -27,20 +39,27 @@
     </ul>
   </div>
 
-  <hero class="contact-header">
-    <div class="blocker"></div>
-  </hero>
+  <div class="hero">
+    <hero class="contact-header">
+      <div class="blocker"></div>
+    </hero>
 
-  <section>
-    <h2>Tell us about your project</h2>
-    <p>We’d love to hear more about your project. Please, leave a message below or give
-      us a call. We have two offices, one in Texas and one in Tennessee. If you find
-      yourself nearby, come say hello!</p>
-  </section>
+    <h1>Contact</h1>
+
+    <section>
+      <div class="liner"></div>
+      <h2>Tell us about your project</h2>
+      <p>We’d love to hear more about your project. Please, leave a message below or give
+        us a call. We have two offices, one in Texas and one in Tennessee. If you find
+        yourself nearby, come say hello!</p>
+    </section>
+  </div>
+
+  
 
   <section>
     <div class="liner"></div>
-    <h2>Contact <br> Details</h2>
+    <h2>Contact Details</h2>
 
     <div class="office">
       <h4>Main Office</h4>
@@ -80,7 +99,7 @@
   </div>
 
   <section class='connect'>
-    <h2>Connect <br> with us</h2>
+    <h2>Connect with us</h2>
 
     <form id='contactForm' onsubmit='checkValidation(event)'>
 

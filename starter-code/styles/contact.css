@@ -194,6 +194,35 @@ nav img {
   height: fit-content;
 }
 
+nav .tabletLinks {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  nav #hamburger {
+    display: none;
+  }
+  nav .tabletLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
 footer {
   position: relative;
   background-color: #eeeff4;
@@ -342,6 +371,7 @@ section {
 
 section h2 {
   margin-top: 0;
+  max-width: 300px;
 }
 
 section h4 {
@@ -378,6 +408,14 @@ section .office .map-arrow p {
   font-weight: 700;
 }
 
+.hero .liner {
+  display: none;
+}
+
+.hero h1 {
+  display: none;
+}
+
 .contact-map {
   background-image: url("../assets/contact/mobile/image-map.png");
   background-size: cover;
@@ -388,6 +426,10 @@ section .office .map-arrow p {
 
 .connect {
   padding-bottom: 4rem;
+}
+
+.connect h2 {
+  max-width: 250px;
 }
 
 form {
@@ -448,5 +490,48 @@ button {
 
 button img {
   margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 0;
+  }
+  section h2 {
+    max-width: 500px;
+  }
+  .hero {
+    position: relative;
+    margin-bottom: 12.5rem;
+  }
+  .hero section {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: 88px;
+    padding-left: 59px;
+    background-color: white;
+    margin-left: 58px;
+    margin-bottom: 0;
+  }
+  .hero section .liner {
+    display: block;
+  }
+  .hero h1 {
+    display: block;
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+  }
+  .contact-header {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/contact/tablet/image-hero.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/contact/tablet/image-hero.jpg");
+    background-size: cover;
+    height: 720px;
+  }
+  .contact-header .blocker {
+    display: none;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
