@@ -267,6 +267,7 @@ section .office .map-arrow p {
 }
 
 form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,18 +278,44 @@ form {
       flex-wrap: wrap;
 }
 
+form div {
+  width: 100%;
+  position: relative;
+}
+
+form div:not(:last-of-type) {
+  margin-bottom: 2.5rem;
+}
+
 form input {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-form input:not(:last-of-type) {
-  margin-bottom: 2.5rem;
-}
-
 form input:last-of-type {
   padding-bottom: 4.625rem;
+}
+
+form .inputError {
+  margin-bottom: 4rem;
+  color: #DF5656;
+  position: absolute;
+  right: 1.6rem;
+  opacity: 0;
+}
+
+form .inputError.message {
+  top: 1.5rem;
+  bottom: 1.75rem;
+}
+
+form .inputError.email {
+  top: 1.4rem;
+}
+
+form .inputError.name {
+  top: 1.2rem;
 }
 
 button {

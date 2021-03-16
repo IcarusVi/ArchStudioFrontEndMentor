@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel='stylesheet' href='./styles/contact.css'>
   <script src="./scripts/script.js"></script>
-  
+
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
 </head>
+
 <body>
 
   <nav>
     <img class='nav-logo' src='./assets/logo.svg'>
-    <img id='hamburger' class='hamburger' onclick="toggleSubMenu()" src='./assets/icons/icon-hamburger.svg'>  </nav>
+    <img id='hamburger' class='hamburger' onclick="toggleSubMenu()" src='./assets/icons/icon-hamburger.svg'>
+  </nav>
 
   <div id='subMenu' class="subMenu">
     <ul>
@@ -30,8 +33,8 @@
 
   <section>
     <h2>Tell us about your project</h2>
-    <p>We’d love to hear more about your project. Please, leave a message below or give 
-      us a call. We have two offices, one in Texas and one in Tennessee. If you find 
+    <p>We’d love to hear more about your project. Please, leave a message below or give
+      us a call. We have two offices, one in Texas and one in Tennessee. If you find
       yourself nearby, come say hello!</p>
   </section>
 
@@ -41,24 +44,32 @@
 
     <div class="office">
       <h4>Main Office</h4>
-      <p>Mail:	archone@mail.com</p>
+      <p>Mail: archone@mail.com</p>
       <p>Address: 1892 Chenoweth Drive TN</p>
       <p>Phone: 123-456-3451</p>
       <div class='map-arrow'>
         <p>View on Map</p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><g fill="none" fill-rule="evenodd" stroke="#1b1d23" stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+          <g fill="none" fill-rule="evenodd" stroke="#1b1d23" stroke-width="2">
+            <path d="M15 1l9 9-9 9M0 10h24" />
+          </g>
+        </svg>
 
       </div>
     </div>
 
     <div class="office">
       <h4>Office II </h4>
-      <p>Mail:	archtwo@mail.com</p>
+      <p>Mail: archtwo@mail.com</p>
       <p>Address: 3399 Wines Lane TX</p>
       <p>Phone: 832-123-4321</p>
       <div class='map-arrow'>
         <p>View on Map</p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><g fill="none" fill-rule="evenodd" stroke="#1b1d23" stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+          <g fill="none" fill-rule="evenodd" stroke="#1b1d23" stroke-width="2">
+            <path d="M15 1l9 9-9 9M0 10h24" />
+          </g>
+        </svg>
 
       </div>
     </div>
@@ -71,14 +82,27 @@
   <section class='connect'>
     <h2>Connect <br> with us</h2>
 
-    <form>
-      <input type='text' name='name' placeholder="Name" required>
+    <form id='contactForm' onsubmit='checkValidation(event)'>
 
-      <input type="email" name='Email' placeholder="Email" required>
+      <div class='formInput'>
+        <input id='testThis' type='text' name='name' placeholder="Name">
+        <p class='inputError name'>Can't be empty</p>
+      </div>
 
-      <input type='text' name='Message' placeholder="Message" required>
+      <div class='formInput'>
+        <input type="email" name='Email' placeholder="Email">
+        <p class='inputError email'>Can't be empty</p>
 
-      <button><img src='./assets/icons/icon-arrow.svg'></button>
+      </div>
+
+
+      <div class='formInput'>
+        <input type='text' name='Message' placeholder="Message">
+        <p class='inputError message'>Can't be empty</p>
+      </div>
+
+
+      <button type='submit'><img src='./assets/icons/icon-arrow.svg'></button>
 
     </form>
   </section>
@@ -91,18 +115,26 @@
       </svg>
     </div>
     <div class='footer-content'>
-      <a href= '/starter-code/portfolio.html'><p>Portfolio</p></a>
+      <a href='/starter-code/portfolio.html'>
+        <p>Portfolio</p>
+      </a>
 
-      <a href="/starter-code/about.html"><p>About Us</p></a>
+      <a href="/starter-code/about.html">
+        <p>About Us</p>
+      </a>
 
-      <a href="/starter-code/contact.html"><p>Contact</p></a>
+      <a href="/starter-code/contact.html">
+        <p>Contact</p>
+      </a>
 
     </div>
 
 
 
-    <button onClick="window.location='/starter-code/portfolio.html';">See Our Portfolio <img src='./assets/icons/icon-arrow.svg'></button>
+    <button onClick="window.location='/starter-code/portfolio.html';">See Our Portfolio <img
+        src='./assets/icons/icon-arrow.svg'></button>
 
   </footer>
 </body>
+
 </html>

@@ -67,6 +67,17 @@ section{
 }
 
 form{
+    div{
+        width: 100%;
+        position: relative;
+        
+    }
+    div:not(:last-of-type){
+        margin-bottom: 2.5rem;
+        
+    }
+    width: 100%;
+    
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -75,12 +86,26 @@ form{
         box-sizing: border-box;
         
     }
-    input:not(:last-of-type){
-        margin-bottom: 2.5rem;
-        
-    }
     input:last-of-type{
         padding-bottom: 4.625rem;
+    }
+
+    .inputError{
+        margin-bottom: 4rem;
+        color: $redErrors;
+        position: absolute;
+        right: 1.6rem;
+        opacity: 0;
+        &.message{
+            top: 1.5rem;
+            bottom: 1.75rem;
+        }
+        &.email{
+            top: 1.4rem;
+        }
+        &.name{
+            top: 1.2rem;
+        }
     }
 
 }
