@@ -148,6 +148,9 @@ button{
     &:active{
         background-color: $lightGrey;
     }
+    &:focus{
+        outline: none;
+    }
 }
 
 nav{

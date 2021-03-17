@@ -193,6 +193,10 @@ button:active {
   background-color: #c8ccd8;
 }
 
+button:focus {
+  outline: none;
+}
+
 nav {
   padding: 2rem;
   display: -webkit-box;
@@ -380,6 +384,7 @@ footer button {
 }
 
 .hero {
+  position: relative;
   padding: 6.875rem 2rem 6.875rem 2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-hero-paramour.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/home/mobile/image-hero-paramour.jpg");
@@ -424,6 +429,7 @@ footer button {
   }
   .hero .hero-content p {
     margin-bottom: 2.5rem;
+    width: 445px;
   }
 }
 
@@ -446,6 +452,9 @@ footer button {
     border: none;
     background-color: #eeeff4;
     color: #7d828f;
+  }
+  .hero .sliderButtons .slider:hover {
+    background-color: #60636d;
   }
   .hero .sliderButtons .slider.active {
     background-color: #1b1d23;

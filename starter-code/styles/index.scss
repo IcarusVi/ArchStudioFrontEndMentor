@@ -4,7 +4,9 @@
 
 
 .hero{
+    position: relative;
     padding: 6.875rem 2rem 6.875rem 2rem;
+    
     background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/mobile/image-hero-paramour.jpg');
     background-size: cover;
     .hero-content{
@@ -39,6 +41,7 @@
             }
             p{
                 margin-bottom: 2.5rem;
+                width: 445px;
             }
         }
     }
@@ -56,10 +59,15 @@
                 border:none;
                 background-color: $veryLightGrey;
                 color: $medGrey;
+                &:hover{
+                    background-color: $darkGrey;
+                }
+                
             }
             .slider.active{
                 background-color:$veryDarkBlue;
                 color: white;
+                
             }
         }
     }

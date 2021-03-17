@@ -193,6 +193,10 @@ button:active {
   background-color: #c8ccd8;
 }
 
+button:focus {
+  outline: none;
+}
+
 nav {
   padding: 2rem;
   display: -webkit-box;
