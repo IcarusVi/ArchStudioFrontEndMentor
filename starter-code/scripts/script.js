@@ -1,5 +1,5 @@
 
-
+//Function for opening hamburger navbar
 let toggleSubMenu = () => {
     let menuIcon = document.getElementById('hamburger');
     let subMenu = document.getElementById('subMenu');
@@ -12,7 +12,7 @@ let toggleSubMenu = () => {
         menuIcon.src = './assets/icons/icon-hamburger.svg'
     }
 }
-
+//Function to validate form input
 let checkValidation = (event) => {
     event.preventDefault()
     let inputErrors = document.getElementsByClassName('formInput');
@@ -33,7 +33,7 @@ let checkValidation = (event) => {
     }
 }
 
-//${sliderImages[number-1]
+//Function to slide images
 let sliderImages = [
     {
         src:'./assets/home/desktop/image-hero-paramour.jpg',
@@ -71,4 +71,3 @@ let slideImages = (event) => {
     heroParagraph.innerHTML = sliderImages[number-1].paragraph;
 
 }
-

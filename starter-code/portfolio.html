@@ -18,15 +18,15 @@
       <a href='/starter-code/index.html'><img class='nav-logo' src='./assets/logo.svg'></a>
       <img id='hamburger' class='hamburger' onclick="toggleSubMenu()" src='./assets/icons/icon-hamburger.svg'>
       <div class='tabletLinks'>
-        <a href='/starter-code/portfolio.html'>
+        <a id='tabletPortfolio' href='/starter-code/portfolio.html'>
           <p>Portfolio</p>
         </a>
 
-        <a href="/starter-code/about.html">
+        <a id='tabletAbout' href="/starter-code/about.html">
           <p>About Us</p>
         </a>
 
-        <a href="/starter-code/contact.html">
+        <a id='tabletContact' href="/starter-code/contact.html">
           <p>Contact</p>
         </a>
       </div>
@@ -194,5 +194,19 @@
   </div>
 
 </body>
-
+<script type="text/javascript">
+  if(window.location.href.indexOf('portfolio') > -1 ){
+    let portfolioLink = document.getElementById('tabletPortfolio')
+    portfolioLink.style = "border-bottom: 2px solid black; font-weight: bold;"
+  }
+  if(window.location.href.indexOf('about') > -1 ){
+    let portfolioLink = document.getElementById('tabletAbout')
+    portfolioLink.style = "border-bottom: 2px solid black;"
+  }
+  if(window.location.href.indexOf('contact') > -1 ){
+    let portfolioLink = document.getElementById('tabletContact')
+    portfolioLink.style = "border-bottom: 2px solid black;"
+  }
+  
+</script>
 </html>
