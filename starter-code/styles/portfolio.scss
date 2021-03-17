@@ -32,6 +32,10 @@
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-del-sol.jpg');
                 background-size: cover;
             }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-del-sol.jpg');
+                background-size: cover;
+            }
 
         }
         .tower{
@@ -42,12 +46,21 @@
                 background-size:cover;
         
             }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/deskTop/image-228b.jpg');
+                background-size:cover;
+        
+            }
         }
         .prototype{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/mobile/image-prototype.jpg');
             background-size:cover;
             @media (min-width:$tablet) {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-prototype.jpg');
+                background-size:cover;
+            }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/deskTop/image-prototype.jpg');
                 background-size:cover;
         
             }
@@ -61,6 +74,11 @@
                 background-size:cover;
         
             }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-seraph.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .eebox{
@@ -68,6 +86,11 @@
             background-size:cover;
             @media (min-width:$tablet) {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-eebox.jpg');
+                background-size:cover;
+        
+            }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-eebox.jpg');
                 background-size:cover;
         
             }
@@ -81,6 +104,11 @@
                 background-size:cover;
         
             }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-federal.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .grand{
@@ -88,6 +116,11 @@
             background-size:cover;
             @media (min-width:$tablet) {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-edelweiss.jpg');
+                background-size:cover;
+        
+            }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-edelweiss.jpg');
                 background-size:cover;
         
             }
@@ -101,6 +134,11 @@
                 background-size:cover;
         
             }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-netcry.jpg');
+                background-size:cover;
+        
+            }
         }
 
         .hypers{
@@ -108,6 +146,11 @@
             background-size:cover;
             @media (min-width:$tablet) {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-hypers.jpg');
+                background-size:cover;
+        
+            }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-hypers.jpg');
                 background-size:cover;
         
             }
@@ -119,8 +162,14 @@
             @media (min-width:$tablet) {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-sxiv.jpg');
                 background-size:cover;
-        
             }
+
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-sxiv.jpg');
+                background-size:cover;
+            }
+            
+            
         }
 
         .tbt{
@@ -129,7 +178,10 @@
             @media (min-width:$tablet) {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-trinity.jpg');
                 background-size:cover;
-        
+            }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-trinity.jpg');
+                background-size:cover;
             }
         }
 
@@ -139,7 +191,10 @@
             @media (min-width:$tablet) {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/tablet/image-paramour.jpg');
                 background-size:cover;
-        
+            }
+            @media (min-width:$deskTop) {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/portfolio/desktop/image-paramour.jpg');
+                background-size:cover;
             }
         }
 
@@ -152,5 +207,28 @@
     @media (min-width:$tablet) {
         padding: 0;
         margin-bottom: 12.5rem;
+    }
+    @media (min-width:$deskTop) {
+        margin-bottom: 160px;
+    }
+    
+}
+
+.projects-content{
+    @media (min-width:$deskTop) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .project-card{
+            width: 30%;
+            height: 560px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            .content{
+                padding: 0;
+            }
+        }
+
     }
 }
