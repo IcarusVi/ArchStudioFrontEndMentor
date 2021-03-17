@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: white;
   font-family: 'Spartan', sans-serif;
+  max-width: 1440px;
 }
 
 @media (min-width: 768px) {
@@ -19,10 +20,22 @@ body {
   }
 }
 
+@media (min-width: 1441px) {
+  body {
+    padding: 0;
+  }
+}
+
+body .container {
+  position: relative;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 .fancyLine {
   display: none;
   top: -20px;
-  left: 0;
+  left: -3rem;
   position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -31,7 +44,6 @@ body {
           transform-origin: left bottom;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  margin-left: 2rem;
 }
 
 .fancyLine .greyLine {
@@ -52,12 +64,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media (min-width: 1440px) {
-  .fancyLine {
-    margin-left: 4rem;
   }
 }
 
@@ -300,18 +306,16 @@ footer button {
 }
 
 .footerTablet {
+  position: relative;
   display: none;
-  width: 80%;
   height: 120px;
-  position: absolute;
-  left: 0;
+  margin-left: -6.125rem;
+  margin-right: -6.125rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #eeeff4;
+  background: -webkit-gradient(linear, left top, right top, color-stop(90%, #eeeff4), color-stop(0%, white));
+  background: linear-gradient(to right, #eeeff4 90%, white 0%);
 }
 
 .footerTablet .footerLogov2 {
@@ -342,13 +346,13 @@ footer button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0  auto;
-  width: 41.15%;
+  width: 33%;
+  margin-left: 40px;
 }
 
 .footerTablet button {
   position: absolute;
-  right: -10rem;
+  right: 0;
 }
 
 @media (min-width: 768px) {
@@ -361,16 +365,17 @@ footer button {
 
 @media (min-width: 1440px) {
   .footerTablet {
-    width: 67%;
+    margin: 0;
+    max-width: 1110px;
     height: 200px;
     left: auto;
     right: auto;
   }
+  .footerTablet .footer-content {
+    width: 350px;
+  }
   .footerTablet .footerLogov2 {
     width: 200px;
-  }
-  .footerTablet .footer-content {
-    margin-right: 20rem;
   }
 }
 

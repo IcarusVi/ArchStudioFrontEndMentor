@@ -1,9 +1,10 @@
 @import './variables';
 
 body{
-    margin: 0;
+    margin: 0 auto;
     background-color: white;
     font-family: 'Spartan', sans-serif;
+    max-width: 1440px;
     @media (min-width: $tablet) {
         padding-left: 6.125rem;
         padding-right: 6.125rem;
@@ -12,17 +13,24 @@ body{
         padding-left: 10.3125rem;
         padding-right: 10.3125rem;
     }
+    @media (min-width: $deskTop+1) {
+        padding: 0;
+    }
+    .container{
+        position: relative;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
 }
 
 .fancyLine{
     display: none;
     top: -20px;
-    left: 0;
+    left: -3rem;
     position: absolute;
     align-items: center;
     transform-origin: left bottom;
     transform: rotate(90deg);
-    margin-left: 2rem;
     .greyLine{
         height: 1px;
         width: 104px;
@@ -37,9 +45,7 @@ body{
     @media (min-width: $tablet){
         display: flex;
     }
-    @media (min-width: $deskTop){
-        margin-left: 4rem;
-    }
+    
 
 }
 
@@ -217,14 +223,13 @@ footer{
 }
 
 .footerTablet{
+    position: relative;
     display: none;
-    width: 80%;
     height: 120px;
-    position: absolute;
-    left: 0;
+    margin-left: -6.125rem;
+    margin-right: -6.125rem;
     align-items: center;
-    justify-content: space-between;
-    background-color: $veryLightGrey;
+    background: linear-gradient(to right, $veryLightGrey 90%, white 0% );
     .footerLogov2{
         img{
             transform: scale(0.7, 0.7);
@@ -240,29 +245,33 @@ footer{
         background-color: $veryLightGrey;
         display: flex;
         justify-content: space-between;
-        margin:0  auto;
-        width: 41.15%;
+        width: 33%;
+        margin-left: 40px;
         
         
     }
     button{
         position: absolute; 
-        right: -10rem;
+        right: 0;
     }
     @media (min-width: $tablet){
         display: flex;
     }
     @media (min-width: $deskTop){
-        width: 67%;
+        margin: 0;
+        max-width: 1110px;
         height: 200px;
         left: auto;
         right: auto;
+        .footer-content{
+            width: 350px;
+        }
         .footerLogov2{
             width: 200px;
         }
-        .footer-content{
-            margin-right: 20rem;
+        button{
         }
     }
+    
 
 }
