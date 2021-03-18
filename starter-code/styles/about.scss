@@ -28,6 +28,12 @@ h1{
     }
 }
 
+#ourHeritage{
+    img{
+        display: none;
+    }
+}
+
 
 section{
     h2{
@@ -169,6 +175,7 @@ section{
         }
         img{
             height: 568px;
+            display: block;
         }
     }
 

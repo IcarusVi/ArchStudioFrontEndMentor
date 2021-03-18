@@ -421,6 +421,10 @@ h1 {
   display: none;
 }
 
+#ourHeritage img {
+  display: none;
+}
+
 section {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -584,6 +588,7 @@ section .liner {
   }
   #ourHeritage img {
     height: 568px;
+    display: block;
   }
   .leaders {
     width: 100%;
