@@ -81,6 +81,8 @@ a {
   color: #7d828f;
   position: relative;
   font-weight: bold;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 a:hover {
@@ -241,6 +243,8 @@ nav .tabletLinks {
 
 @media (min-width: 768px) {
   nav {
+    padding: 2rem 0;
+    width: 500px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
