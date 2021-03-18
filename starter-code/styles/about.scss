@@ -130,18 +130,43 @@ section{
 }
 
 @media (min-width:$deskTop){
+    
     .hero{
         .about-header{
             background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('../assets/about/desktop/image-hero.jpg');
             background-size: cover;
             width: 635px;
         }
+        h1{
+            top: 6.2rem;
+        }
         section{
             width: 446px;
             margin-left: 482px;
+            padding-top: 160px;
+            padding-left: 182px;
         }
 
 
+    }
+    #heritageSection{
+        .liner{
+            margin-bottom: 0;
+        }
+    }
+    #ourHeritage{
+        display: flex;
+        justify-content: space-between;
+        .content{
+            width: 446px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-top: 100px;
+        }
+        img{
+            height: 568px;
+        }
     }
     
 
