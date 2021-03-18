@@ -26,9 +26,12 @@ let checkValidation = (event) => {
         else{
             console.log('Error Input');
             setTimeout(() => {
-                childError.style.opacity = 0
+                childError.style.opacity = 0;
+                childError.style.top = 0;
+
             }, 5 * 1000);
             childError.style.opacity = 1;
+            childError.style.top = 0;
         }
     }
 }
