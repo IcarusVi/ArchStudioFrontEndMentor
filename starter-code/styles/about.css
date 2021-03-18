@@ -536,4 +536,17 @@ section .liner {
     width: 100%;
   }
 }
+
+@media (min-width: 1440px) {
+  .hero .about-header {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.499044))), url("../assets/about/desktop/image-hero.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url("../assets/about/desktop/image-hero.jpg");
+    background-size: cover;
+    width: 635px;
+  }
+  .hero section {
+    width: 446px;
+    margin-left: 482px;
+  }
+}
 /*# sourceMappingURL=about.css.map */
