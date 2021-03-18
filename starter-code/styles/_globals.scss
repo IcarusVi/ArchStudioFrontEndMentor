@@ -64,6 +64,9 @@ a{
     color: $medGrey;
     position: relative;
     font-weight: bold;
+    &:hover{
+        color: $veryDarkBlue;
+    }
 }
 
 h1{
