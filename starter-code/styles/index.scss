@@ -283,6 +283,13 @@
             .project-card{
                 height: 560px;
                 width: 350px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .content{
+                    padding: 40px;
+                    
+                }
             }
             
         }
