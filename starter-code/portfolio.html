@@ -20,14 +20,17 @@
       <div class='tabletLinks'>
         <a id='tabletPortfolio' href='/starter-code/portfolio.html'>
           <p>Portfolio</p>
+          <div class="underLine"></div>
         </a>
 
         <a id='tabletAbout' href="/starter-code/about.html">
           <p>About Us</p>
+          <div class="underLine"></div>
         </a>
 
         <a id='tabletContact' href="/starter-code/contact.html">
           <p>Contact</p>
+          <div class="underLine"></div>
         </a>
       </div>
     </nav>
@@ -197,15 +200,15 @@
 <script type="text/javascript">
   if(window.location.href.indexOf('portfolio') > -1 ){
     let portfolioLink = document.getElementById('tabletPortfolio')
-    portfolioLink.style = "border-bottom: 2px solid black; font-weight: bold;"
+    portfolioLink.childNodes[3].style.display = 'block'
   }
   if(window.location.href.indexOf('about') > -1 ){
-    let portfolioLink = document.getElementById('tabletAbout')
-    portfolioLink.style = "border-bottom: 2px solid black;"
+    let tabletLink = document.getElementById('tabletAbout').childNodes[3]
+    tabletLink.style.display = "block"
   }
   if(window.location.href.indexOf('contact') > -1 ){
-    let portfolioLink = document.getElementById('tabletContact')
-    portfolioLink.style = "border-bottom: 2px solid black;"
+    let contactLink = document.getElementById('tabletContact').childNodes[3]
+    contactLink.style.display = "block"
   }
   
 </script>

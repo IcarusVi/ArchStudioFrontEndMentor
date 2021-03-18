@@ -67,9 +67,19 @@ body .container {
   }
 }
 
+.underLine {
+  display: none;
+  width: 24px;
+  height: 1px;
+  background: #1b1d23;
+  position: absolute;
+  left: 33%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 
 h1 {

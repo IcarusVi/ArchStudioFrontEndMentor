@@ -49,9 +49,20 @@ body{
 
 }
 
+//underline for link headers
+.underLine{
+    display: none;
+    width: 24px;
+    height: 1px;
+    background: $veryDarkBlue;
+    position: absolute;
+    left: 33%;
+}
+
 a{
     text-decoration: none;
     color: inherit;
+    position: relative;
 }
 
 h1{
