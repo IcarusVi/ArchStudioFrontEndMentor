@@ -78,8 +78,9 @@ body .container {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #7d828f;
   position: relative;
+  font-weight: bold;
 }
 
 h1 {

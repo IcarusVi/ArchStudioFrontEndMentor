@@ -202,13 +202,16 @@
   if (window.location.href.indexOf('portfolio') > -1) {
     let portfolioLink = document.getElementById('tabletPortfolio')
     portfolioLink.childNodes[3].style.display = 'block'
+    portfolioLink.style.color = '#1B1D23'
   }
   if (window.location.href.indexOf('about') > -1) {
     let tabletLink = document.getElementById('tabletAbout').childNodes[3]
+    document.getElementById('tabletAbout').style.color = "#1B1D23";
     tabletLink.style.display = "block"
   }
   if (window.location.href.indexOf('contact') > -1) {
     let contactLink = document.getElementById('tabletContact').childNodes[3]
+    document.getElementById('tabletContact').style.color = "#1B1D23"
     contactLink.style.display = "block"
   }
 
