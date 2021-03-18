@@ -6,7 +6,6 @@
 .hero{
     position: relative;
     padding: 6.875rem 2rem 6.875rem 2rem;
-    
     background-image: linear-gradient(rgba(0,0,0,.5)), url('../assets/home/mobile/image-hero-paramour.jpg');
     background-size: cover;
     .hero-content{
@@ -18,6 +17,7 @@
             letter-spacing: -1.2px;
             margin-bottom: 0.9375rem;
             margin-top: 0;
+            color: white;
         }
         p{
             margin-bottom: 3.56rem;
