@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+.container {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: containerSlide;
+          animation-name: containerSlide;
+}
+
+@-webkit-keyframes containerSlide {
+  0% {
+    -webkit-transform: rotate(0) translateY(-15%);
+            transform: rotate(0) translateY(-15%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(0%);
+            transform: rotate(0) translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes containerSlide {
+  0% {
+    -webkit-transform: rotate(0) translateY(-15%);
+            transform: rotate(0) translateY(-15%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(0%);
+            transform: rotate(0) translateY(0%);
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0 auto;
   background-color: white;
@@ -64,6 +97,26 @@ body .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-name: fancyLineSlide;
+            animation-name: fancyLineSlide;
+  }
+  @-webkit-keyframes fancyLineSlide {
+    0% {
+      margin-top: -500px;
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+  @keyframes fancyLineSlide {
+    0% {
+      margin-top: -500px;
+    }
+    100% {
+      margin-top: 0px;
+    }
   }
 }
 
